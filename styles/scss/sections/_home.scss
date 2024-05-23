@@ -1,0 +1,46 @@
+.home {
+  background: url("../img/main_banner.webp");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  padding-top: 262px;
+  padding-bottom: 268px;
+  margin-top: -112px;
+  &__title {
+    max-width: 642px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: $white-color;
+    font-family: "Nunito Sans";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__highlight {
+    margin-bottom: 8px;
+    color: $blue-color;
+    font-family: "Nunito Sans";
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__descr {
+    max-width: 1090px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    color: $white-color;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}

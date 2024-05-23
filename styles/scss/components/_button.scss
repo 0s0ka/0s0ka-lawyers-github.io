@@ -1,0 +1,25 @@
+.button {
+  height: 49px;
+  border: 2px solid $blue-color;
+  padding: 16px 20px;
+  background: $blue-color;
+
+  color: $white-color;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16.8px;
+  text-transform: uppercase;
+
+  display: block;
+
+  &:hover {
+    border: 2px solid $blue-color;
+    padding: 16px 20px;
+    background: $white-color;
+
+    color: $blue-color;
+
+    cursor: url("../icons/bl_hand-pointer.svg"), pointer;
+  }
+}

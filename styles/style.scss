@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@import "./scss/reset";
+@import "./scss/variables";
+@import "./scss/layout/header";
+@import "./scss/layout/container";
+@import "./scss/components/logo";
+@import "./scss/components/title";
+@import "./scss/components/subtitle";
+@import "./scss/components/card-services";
+@import "./scss/sections/home";
+@import "./scss/sections/services";
+@import "./scss/components/button";

@@ -1,0 +1,40 @@
+.card-services {
+  background-color: $white-color;
+  display: flex;
+  width: 412px;
+  height: 250px;
+  padding: 50px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  transition: 0.2s;
+
+  &__img {
+    width: 35px;
+    height: 35px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 150%;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  &:hover {
+    background: $blue-color;
+    color: $white-color;
+    path {
+      fill: $white-color;
+    }
+    cursor: url("../icons/wt_hand-pointer.svg"), pointer;
+
+    // cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNiAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IjM1cHgvYWdyZWVtZW50Ij4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTI5LjY2NjUgNS44MzMyOVYyMy4zMzMzSDEyLjE2NjVWNS44MzMyOUgyOS42NjY1Wk0yOS42NjY1IDIuOTE2NjNIMTIuMTY2NUMxMC41NjIzIDIuOTE2NjMgOS4yNDk4NCA0LjIyOTEzIDkuMjQ5ODQgNS44MzMyOVYyMy4zMzMzQzkuMjQ5ODQgMjQuOTM3NSAxMC41NjIzIDI2LjI1IDEyLjE2NjUgMjYuMjVIMjkuNjY2NUMzMS4yNzA3IDI2LjI1IDMyLjU4MzIgMjQuOTM3NSAzMi41ODMyIDIzLjMzMzNWNS44MzMyOUMzMi41ODMyIDQuMjI5MTMgMzEuMjcwNyAyLjkxNjYzIDI5LjY2NjUgMi45MTY2M1pNMTguNjg1MyAyMC40MTY2TDEzLjYyNDggMTUuMzEyNUwxNS42NjY1IDEzLjI1NjJMMTguNjg1MyAxNi4yODk1TDI2LjE2NjUgOC43NDk5NkwyOC4yMDgyIDEwLjgwNjJMMTguNjg1MyAyMC40MTY2Wk02LjMzMzE3IDguNzQ5OTZIMy40MTY1VjI5LjE2NjZDMy40MTY1IDMwLjc3MDggNC43MjkgMzIuMDgzMyA2LjMzMzE3IDMyLjA4MzNIMjYuNzQ5OFYyOS4xNjY2SDYuMzMzMTdWOC43NDk5NloiIGZpbGw9IiM0RjhGRjAiLz4KPC9nPgo8L3N2Zz4K),
+    //   pointer;
+  }
+}
