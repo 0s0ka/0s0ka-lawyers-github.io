@@ -1,0 +1,30 @@
+.corner {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+  &__lt {
+    top: 20px;
+    left: 20px;
+    border-top: 1px solid $white-color;
+    border-left: 1px solid $white-color;
+  }
+  &__rt {
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid $white-color;
+    border-right: 1px solid $white-color;
+  }
+  &__rb {
+    right: 20px;
+    bottom: 20px;
+    border-right: 1px solid $white-color;
+    border-bottom: 1px solid $white-color;
+  }
+  &__lb {
+    left: 20px;
+    bottom: 20px;
+    border-left: 1px solid $white-color;
+    border-bottom: 1px solid $white-color;
+  }
+}

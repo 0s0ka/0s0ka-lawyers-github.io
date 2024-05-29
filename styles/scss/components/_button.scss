@@ -15,11 +15,25 @@
 
   &:hover {
     border: 2px solid $blue-color;
-    padding: 16px 20px;
     background: $white-color;
 
     color: $blue-color;
 
     cursor: url("../icons/bl_hand-pointer.svg"), pointer;
+  }
+  &-grey {
+    border: 2px solid $grey-color;
+    background: $grey-color;
+
+    color: $black-color;
+
+    &:hover {
+      border: 2px solid $grey-color;
+      background: $white-color;
+
+      color: $black-color;
+
+      cursor: url("../icons/bl_hand-pointer.svg"), pointer;
+    }
   }
 }

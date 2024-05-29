@@ -180,7 +180,7 @@ textarea:not([rows]) {
 }
 
 .container {
-  max-width: 1290px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: content-box;
@@ -221,6 +221,13 @@ textarea:not([rows]) {
   height: 3px;
   margin-top: 10px;
 }
+.title-left {
+  text-align: left;
+}
+.title-left::after {
+  margin: 0;
+  margin-top: 10px;
+}
 
 .subtitle {
   color: #222;
@@ -231,15 +238,16 @@ textarea:not([rows]) {
 }
 
 .card-services {
+  position: relative;
   background-color: #fff;
   display: flex;
-  width: 412px;
+  width: 100%;
   height: 250px;
   padding: 50px 32px;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .card-services__img {
   width: 35px;
@@ -260,7 +268,11 @@ textarea:not([rows]) {
 .card-services:hover {
   background: #4f8ff0;
   color: #fff;
+  transform: scale(1.05);
   cursor: url("../icons/wt_hand-pointer.svg"), pointer;
+}
+.card-services:hover .card-services__corner {
+  border-color: #fff;
 }
 .card-services:hover path {
   fill: #fff;
@@ -281,7 +293,6 @@ textarea:not([rows]) {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  font-family: "Nunito Sans";
   font-size: 30px;
   font-weight: 300;
   line-height: 150%;
@@ -290,7 +301,6 @@ textarea:not([rows]) {
 .home__highlight {
   margin-bottom: 8px;
   color: #4f8ff0;
-  font-family: "Nunito Sans";
   font-size: 56px;
   font-weight: 600;
   line-height: 150%;
@@ -304,7 +314,6 @@ textarea:not([rows]) {
   margin-bottom: 40px;
   color: #fff;
   text-align: center;
-  font-family: "Nunito Sans";
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
@@ -329,16 +338,47 @@ textarea:not([rows]) {
   margin-bottom: 48px;
 }
 .services__cards-wrp {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
   row-gap: 38px;
-  justify-content: space-between;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   padding-bottom: 48px;
 }
 .services__button {
   width: 138px;
   margin: 0 auto;
+}
+
+.corner {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+}
+.corner__lt {
+  top: 20px;
+  left: 20px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.corner__rt {
+  top: 20px;
+  right: 20px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.corner__rb {
+  right: 20px;
+  bottom: 20px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.corner__lb {
+  left: 20px;
+  bottom: 20px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .button {
@@ -356,8 +396,126 @@ textarea:not([rows]) {
 }
 .button:hover {
   border: 2px solid #4f8ff0;
-  padding: 16px 20px;
   background: #fff;
   color: #4f8ff0;
   cursor: url("../icons/bl_hand-pointer.svg"), pointer;
+}
+.button-grey {
+  border: 2px solid #e6e6e6;
+  background: #e6e6e6;
+  color: #222;
+}
+.button-grey:hover {
+  border: 2px solid #e6e6e6;
+  background: #fff;
+  color: #222;
+  cursor: url("../icons/bl_hand-pointer.svg"), pointer;
+}
+
+.about {
+  padding: 80px 0;
+  background-color: #fff;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__title {
+  margin-bottom: 37px;
+}
+.about__title .title__highlight {
+  color: #4f8ff0;
+  font-weight: 900;
+}
+.about__text-wr {
+  max-width: 720px;
+  width: 100%;
+}
+.about__subtitle {
+  max-width: 720px;
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 32px;
+  line-height: 150%;
+}
+.about__img {
+  max-width: 535px;
+  width: 100%;
+  height: 359px;
+  box-shadow: 4px 4px 12px 2px rgba(33, 33, 33, 0.25);
+}
+.about__button-wr {
+  display: flex;
+}
+.about__button {
+  display: block;
+  padding: 16px 24px;
+  margin-right: 24px;
+}
+
+.lawyers {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+.lawyers__title {
+  text-align: center;
+  margin-bottom: 37px;
+}
+.lawyers__subtitle {
+  max-width: 920px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.lawyers__cards-wrp {
+  max-width: 1320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 24px;
+  margin-bottom: 80px;
+}
+
+.card-lawyers {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 312px;
+  width: 100%;
+  height: 414px;
+  padding-bottom: 24px;
+  cursor: url("../icons/wt_hand-pointer.svg"), pointer;
+  box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+}
+.card-lawyers__img {
+  height: 320px;
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.card-lawyers__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  padding-bottom: 10px;
+}
+.card-lawyers__subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  text-transform: lowercase;
+}
+
+.card-lawyers-hidden {
+  position: absolute;
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */

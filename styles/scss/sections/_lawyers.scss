@@ -1,4 +1,4 @@
-.services {
+.lawyers {
   padding: 80px 0;
   background-color: $light-grey-color;
   &__title {
@@ -13,14 +13,11 @@
     margin-bottom: 48px;
   }
   &__cards-wrp {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
-    row-gap: 38px;
-    column-gap: 24px;
-    padding-bottom: 48px;
-  }
-  &__button {
-    width: 138px;
-    margin: 0 auto;
+    max-width: 1320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 24px;
+    margin-bottom: 80px;
   }
 }
