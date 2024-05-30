@@ -136,6 +136,7 @@ textarea:not([rows]) {
 .header__contacts-img {
   width: 20px;
   height: 20px;
+  margin-right: 8px;
 }
 .header__contacts-text {
   color: #fff;
@@ -143,6 +144,10 @@ textarea:not([rows]) {
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
+}
+.header__contacts-text a {
+  display: flex;
+  align-items: center;
 }
 .header__call {
   margin-left: auto;
@@ -517,7 +522,6 @@ textarea:not([rows]) {
 }
 .card-lawyers:hover .card-lawyers-hidden {
   opacity: 1;
-  z-index: 10;
 }
 
 .card-lawyers-hidden {
@@ -568,4 +572,116 @@ textarea:not([rows]) {
   border-color: #4f8ff0;
   width: 25px;
   height: 25px;
+}
+
+.review {
+  padding: 80px 0;
+  max-width: 1920px;
+  width: 100%;
+  height: 588px;
+  margin: 0 auto;
+  background: url(../../../img/review_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #d9d9d9;
+}
+.review__title-wrp {
+  max-width: 1320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.review__slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+  height: 29px;
+}
+.review__title {
+  margin-bottom: 51px;
+}
+.review__cards-wrp {
+  margin-bottom: 32px;
+  max-width: 1320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.review__button-wr {
+  display: flex;
+}
+.review__button {
+  display: block;
+  padding: 16px 24px;
+  margin-right: 24px;
+}
+
+.card-review {
+  position: relative;
+  max-width: 648px;
+  width: 100%;
+  max-height: 244px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+  padding: 32px;
+}
+.card-review__wrp {
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 80px 24px 1fr 55px;
+  grid-template-rows: auto;
+  grid-template-areas: "img1 . company  img2" "img1 . name  img2";
+}
+.card-review__img1 {
+  max-width: 80px;
+  width: 100%;
+  margin-right: 24px;
+  grid-area: img1;
+}
+.card-review__company-name {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+  grid-area: company;
+  justify-self: start;
+  align-self: end;
+}
+.card-review__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  grid-area: name;
+}
+.card-review__img2 {
+  grid-area: img2;
+  align-self: center;
+}
+.card-review__review {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.arrow {
+  z-index: 10;
+}
+.arrow__bk img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  cursor: url(../icons/bl_hand-pointer.svg), pointer;
+}
+.arrow__slash {
+  height: 32px;
+  border-right: 2px solid #4f8ff0;
+  transform: rotate(35deg);
+}
+.arrow__fwd {
+  width: 20px;
+  height: 20px;
+  cursor: url(../icons/bl_hand-pointer.svg), pointer;
 }/*# sourceMappingURL=style.css.map */

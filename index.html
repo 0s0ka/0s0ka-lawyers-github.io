@@ -12,23 +12,26 @@
         <div class="header__container container">
           <div class="header__contacts">
             <div class="header__contacts-item">
-              <img
-                src="./icons/phone.svg"
-                alt="phone"
-                class="header__contacts-img"
-              />
               <p class="header__contacts-text">
-                <a href="tel:89220229482"> +7 (922) 022-94-82 </a>
+                <a href="tel:89220229482">
+                  <img
+                    src="./icons/phone.svg"
+                    alt="phone"
+                    class="header__contacts-img"
+                  />
+                  +7 (922) 022-94-82
+                </a>
               </p>
             </div>
             <div class="header__contacts-item">
-              <img
-                src="./icons/mail.svg"
-                alt="mail"
-                class="header__contacts-img"
-              />
               <p class="header__contacts-text">
-                <a href="mailto:janis62@yahoo.com">janis62@yahoo.com</a>
+                <a href="mailto:janis62@yahoo.com">
+                  <img
+                    src="./icons/mail.svg"
+                    alt="mail"
+                    class="header__contacts-img"
+                  />janis62@yahoo.com</a
+                >
               </p>
             </div>
             <button class="header__call">Заказать звонок</button>
@@ -460,8 +463,111 @@
           </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
+      <section class="review">
+        <div class="container">
+          <div class="review__title-wrp">
+            <h2 class="review__title title title-left">
+              Что о нас говорят клиенты
+            </h2>
+            <div class="review__slider">
+              <button type="button" class="slider__button-bk">
+                <div class="arrow arrow__bk">
+                  <img src="/icons/bl_arrow_fwd.svg" alt="arrow back" />
+                </div>
+              </button>
+              <div class="arrow arrow__slash"></div>
+              <button type="button" class="slider__button-fwd">
+                <div class="arrow arrow__fwd">
+                  <img src="./icons/bl_arrow_fwd.svg" alt="arrow forward" />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="review__cards-wrp">
+            <div class="review__card card-review">
+              <div class="card-review__wrp">
+                <img
+                  src="./img/review_anastasia.webp"
+                  alt=""
+                  class="card-review__img1"
+                />
+                <p class="card-review__company-name">ООО “ИТ Консалтинг”</p>
+                <p class="card-review__name">Логинова Анастасия</p>
+                <img
+                  src="./icons/feather.svg"
+                  alt="feather"
+                  class="card-review__img2"
+                />
+              </div>
+              <p class="card-review__review">
+                Многие думают, что Lorem Ipsum - взятый с потолка
+                псевдо-латинский набор слов, но это не совсем так. Его корни
+                уходят в один фрагмент классической латыни 45 года н.э., то есть
+                более двух тысячелетий назад. Ричард МакКлинток, профессор
+                латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
+                самых странных слов ...
+              </p>
+            </div>
+            <div class="review__card card-review">
+              <div class="card-review__wrp">
+                <img
+                  src="./img/review_sergei.webp"
+                  alt=""
+                  class="card-review__img1"
+                />
+                <p class="card-review__company-name">АО “ПРОМАРШ”</p>
+                <p class="card-review__name">Макаров Сергей</p>
+                <img
+                  src="./icons/feather.svg"
+                  alt="feather"
+                  class="card-review__img2"
+                />
+              </div>
+              <p class="card-review__review">
+                Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка
+                не хотите какой-нибудь шутки, скрытой в середине абзаца. Также
+                все другие известные генераторы Lorem Ipsum используют один и
+                тот же текст, который они просто повторяют, пока не достигнут
+                нужный объём.
+              </p>
+            </div>
+          </div>
+          <div class="review__button-wr">
+            <a href="" class="review__button button">Все отзывы</a>
+            <button class="review__button button button-grey">
+              Написать отзыв
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="usfull-materials">
+        <div class="container">
+          <h2 class="usfull-materials__title title"></h2>
+          <p class="usfull-materials__subtitle subtitle"></p>
+          <div class="usfull-materials__cards-wrp">
+            <a href="https://doka.guide/html/input/" target="_blank">
+              <div class="usfull-materials__card card-usfull-materials">
+                <div class="usfull-materials__corner corner corner__lt"></div>
+                <div class="usfull-materials__corner corner corner__rt"></div>
+                <div class="usfull-materials__corner corner corner__rb"></div>
+                <div class="usfull-materials__corner corner corner__lb"></div>
+                <img src="" alt="" />
+                <p class="usfull-materials__title"></p>
+                <p class="usfull-materials__date"></p>
+                <p class="usfull-materials__subtitle"></p>
+              </div>
+            </a>
+            <a href="https://doka.guide/html/input/" target="_blank"></a>
+            <a href="https://doka.guide/html/input/" target="_blank"></a>
+          </div>
+          <a
+            href="https://drafts.csswg.org"
+            target="_blank"
+            class="usfull-materials__button button"
+            >Все услуги</a
+          >
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>

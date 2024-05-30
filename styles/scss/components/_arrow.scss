@@ -1,0 +1,20 @@
+.arrow {
+  z-index: 10;
+
+  &__bk img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    cursor: url(../icons/bl_hand-pointer.svg), pointer;
+  }
+  &__slash {
+    height: 32px;
+    border-right: 2px solid $blue-color;
+    transform: rotate(35deg);
+  }
+  &__fwd {
+    width: 20px;
+    height: 20px;
+    cursor: url(../icons/bl_hand-pointer.svg), pointer;
+  }
+}
